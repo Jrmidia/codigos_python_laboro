@@ -22,12 +22,11 @@ print("Os números escolhidos foram: ")
 print (valor2)
 
 while True:
-    opcao = int(input("Deseja apagar os números da lista? [1]-SIM ou [0]-NÃO:"))
+    opcao = int(input("Deseja apagar os números da lista? [1]-SIM ou [2]-NÃO:"))
 
     if opcao == 1:
-        valor2.clear()
-        print(valor2) 
-        break      
+        valor2.pop()
+        print(valor2)       
     
     elif opcao == 2: 
         break #encerra o sistema
